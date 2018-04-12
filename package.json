@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "node start-client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@csil-git1.cs.surrey.sfu.ca:raymonde/CMPT470-Quiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.2.0",
+    "lodash": "^4.17.5",
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.0.10",
+    "nodemon": "^1.17.3",
+    "react-bootstrap": "^0.32.1",
+    "react-facebook-login": "^4.0.1",
+    "react-google-login": "^3.2.0",
+    "socket.io": "^2.0.4",
+    "validator": "^9.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
